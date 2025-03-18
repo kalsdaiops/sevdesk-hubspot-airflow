@@ -3722,3 +3722,94 @@
 [2025-03-18T11:54:22.107+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:54:22.107+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-18T11:54:22.120+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:54:22.120+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:50:00+00:00, run_after=2025-03-18 11:55:00+00:00
 [2025-03-18T11:54:22.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.052 seconds
+[2025-03-18T11:54:52.859+0000] {processor.py:186} INFO - Started process (PID=35008) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:54:52.860+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:54:52.861+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:54:52.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:54:52.868+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:54:52.880+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:54:52.880+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:54:52.890+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:54:52.890+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:50:00+00:00, run_after=2025-03-18 11:55:00+00:00
+[2025-03-18T11:54:52.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.044 seconds
+[2025-03-18T11:55:23.270+0000] {processor.py:186} INFO - Started process (PID=35076) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:23.271+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:55:23.272+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:23.272+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:23.280+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:23.290+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:23.290+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:55:23.300+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:23.300+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:55:23.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.043 seconds
+[2025-03-18T11:55:53.485+0000] {processor.py:186} INFO - Started process (PID=35144) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:53.485+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:55:53.486+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:53.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:53.490+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:55:53.497+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:53.497+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:55:53.504+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:55:53.504+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:55:53.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.027 seconds
+[2025-03-18T11:56:23.636+0000] {processor.py:186} INFO - Started process (PID=35212) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:23.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:56:23.637+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:23.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:23.641+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:23.650+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:23.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:56:23.658+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:23.658+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:56:23.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.030 seconds
+[2025-03-18T11:56:53.852+0000] {processor.py:186} INFO - Started process (PID=35280) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:53.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:56:53.855+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:53.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:53.862+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:56:53.875+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:53.875+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:56:53.885+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:56:53.885+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:56:53.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.045 seconds
+[2025-03-18T11:57:24.093+0000] {processor.py:186} INFO - Started process (PID=35348) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:24.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:57:24.094+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:24.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:24.098+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:24.105+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:24.105+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:57:24.112+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:24.112+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:57:24.118+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.027 seconds
+[2025-03-18T11:57:54.836+0000] {processor.py:186} INFO - Started process (PID=35404) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:54.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:57:54.839+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:54.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:54.845+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:57:54.857+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:54.857+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:57:54.868+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:57:54.868+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:57:54.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.046 seconds
+[2025-03-18T11:58:25.093+0000] {processor.py:186} INFO - Started process (PID=35471) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:25.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:58:25.097+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:25.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:25.104+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:25.118+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:25.118+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:58:25.129+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:25.129+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:58:25.136+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.049 seconds
+[2025-03-18T11:58:55.437+0000] {processor.py:186} INFO - Started process (PID=35539) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:55.439+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:58:55.441+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:55.441+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:55.450+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:58:55.461+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:55.461+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:58:55.471+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:58:55.471+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:58:55.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.046 seconds
+[2025-03-18T11:59:25.498+0000] {processor.py:186} INFO - Started process (PID=35606) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:25.498+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:59:25.499+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:25.499+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:25.503+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:25.510+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:25.510+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:59:25.518+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:25.518+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:59:25.524+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.028 seconds
+[2025-03-18T11:59:56.435+0000] {processor.py:186} INFO - Started process (PID=35672) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:56.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T11:59:56.438+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:56.438+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:56.446+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T11:59:56.460+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:56.460+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:59:56.472+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:59:56.472+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 11:55:00+00:00, run_after=2025-03-18 12:00:00+00:00
+[2025-03-18T11:59:56.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.050 seconds
+[2025-03-18T12:00:26.703+0000] {processor.py:186} INFO - Started process (PID=35740) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:26.704+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T12:00:26.706+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:26.706+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:26.714+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:26.725+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:26.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T12:00:26.735+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:26.735+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 12:00:00+00:00, run_after=2025-03-18 12:05:00+00:00
+[2025-03-18T12:00:26.742+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.045 seconds
+[2025-03-18T12:00:57.016+0000] {processor.py:186} INFO - Started process (PID=35808) to work on /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:57.017+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dynamicsensor_dag.py for tasks to queue
+[2025-03-18T12:00:57.019+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:57.019+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:57.028+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync_dynamic' retrieved from /opt/airflow/dags/dynamicsensor_dag.py
+[2025-03-18T12:00:57.040+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:57.040+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T12:00:57.052+0000] {logging_mixin.py:190} INFO - [2025-03-18T12:00:57.052+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync_dynamic to 2025-03-18 12:00:00+00:00, run_after=2025-03-18 12:05:00+00:00
+[2025-03-18T12:00:57.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dynamicsensor_dag.py took 0.052 seconds

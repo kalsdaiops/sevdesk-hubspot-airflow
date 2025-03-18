@@ -9,6 +9,14 @@ This project automates the process of transferring newly created contacts from *
 - **HubSpot API** → Creates contacts in CRM
 - **Docker** → Containerized execution
 - **GitHub** → Version control
+  
+🛠 Tech Equivalents: AWS vs. Apache Airflow
+AWS Service	Apache Airflow Equivalent	Purpose
+**AWS Lambda | Airflow DAG (PythonOperator)** -	Executes the Python script that fetches data from sevDesk and pushes it to HubSpot.
+**AWS EventBridge  | (Scheduler)	Airflow Scheduler (Cron/Timetable)**	 -	Triggers the DAG at defined intervals (e.g., every hour).
+**AWS Secrets Manager | 	Airflow Variables & Connections	 -**	Stores API keys securely to avoid hardcoding sensitive credentials.
+**AWS CloudWatch Logs | 	Airflow Task Logs (UI & Logging)**	 -	Logs task execution, errors, and success status.
+**AWS Step Functions | 	Airflow DAG Task Dependencies**	 -	Defines task execution order and dependencies.
 
 ## 📂 Project Structure
 ```

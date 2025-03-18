@@ -3477,3 +3477,80 @@
 [2025-03-18T11:36:44.660+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:36:44.660+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-18T11:36:44.668+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:36:44.668+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
 [2025-03-18T11:36:44.679+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.037 seconds
+[2025-03-18T11:37:14.957+0000] {processor.py:186} INFO - Started process (PID=32630) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:14.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:37:14.959+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:14.959+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:14.967+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:14.977+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:14.977+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:37:14.984+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:14.984+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:37:14.992+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.038 seconds
+[2025-03-18T11:37:45.267+0000] {processor.py:186} INFO - Started process (PID=32698) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:45.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:37:45.268+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:45.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:45.273+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:37:45.284+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:45.284+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:37:45.292+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:37:45.292+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:37:45.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.038 seconds
+[2025-03-18T11:38:15.813+0000] {processor.py:186} INFO - Started process (PID=32766) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:15.814+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:38:15.816+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:15.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:15.820+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:15.829+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:15.828+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:38:15.836+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:15.836+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:38:15.845+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.035 seconds
+[2025-03-18T11:38:46.233+0000] {processor.py:186} INFO - Started process (PID=32834) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:46.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:38:46.235+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:46.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:46.240+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:38:46.249+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:46.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:38:46.255+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:38:46.255+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:38:46.265+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.034 seconds
+[2025-03-18T11:39:16.694+0000] {processor.py:186} INFO - Started process (PID=32902) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:16.694+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:39:16.695+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:16.695+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:16.701+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:16.709+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:16.709+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:39:16.715+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:16.715+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:39:16.725+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.034 seconds
+[2025-03-18T11:39:47.022+0000] {processor.py:186} INFO - Started process (PID=32970) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:47.023+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:39:47.024+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:47.024+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:47.031+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:39:47.042+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:47.042+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:39:47.049+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:39:47.048+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:39:47.059+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.040 seconds
+[2025-03-18T11:40:17.509+0000] {processor.py:186} INFO - Started process (PID=33037) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:17.510+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:40:17.511+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:17.511+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:17.521+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:17.534+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:17.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:40:17.540+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:17.540+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:40:17.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.045 seconds
+[2025-03-18T11:40:47.910+0000] {processor.py:186} INFO - Started process (PID=33105) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:47.911+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:40:47.912+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:47.912+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:47.918+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:40:47.927+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:47.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:40:47.933+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:40:47.933+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:40:47.946+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.038 seconds
+[2025-03-18T11:41:18.571+0000] {processor.py:186} INFO - Started process (PID=33173) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:18.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:41:18.573+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:18.573+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:18.577+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:18.586+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:18.586+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:41:18.593+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:18.593+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:41:18.600+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.033 seconds
+[2025-03-18T11:41:49.298+0000] {processor.py:186} INFO - Started process (PID=33241) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:49.299+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:41:49.300+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:49.299+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:49.308+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:41:49.316+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:49.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:41:49.323+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:41:49.322+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:41:49.331+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.036 seconds
+[2025-03-18T11:42:19.795+0000] {processor.py:186} INFO - Started process (PID=33309) to work on /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:42:19.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/getEmail_dag.py for tasks to queue
+[2025-03-18T11:42:19.797+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:42:19.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:42:19.809+0000] {processor.py:925} INFO - DAG(s) 'fetch_sevdesk_contact' retrieved from /opt/airflow/dags/getEmail_dag.py
+[2025-03-18T11:42:19.820+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:42:19.820+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-18T11:42:19.828+0000] {logging_mixin.py:190} INFO - [2025-03-18T11:42:19.828+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_sevdesk_contact to None, run_after=None
+[2025-03-18T11:42:19.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/getEmail_dag.py took 0.043 seconds

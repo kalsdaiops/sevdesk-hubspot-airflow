@@ -75,3 +75,38 @@
 [2025-03-19T00:05:19.457+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:19.457+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-19T00:05:19.464+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:19.464+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
 [2025-03-19T00:05:19.471+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.041 seconds
+[2025-03-19T00:05:49.515+0000] {processor.py:186} INFO - Started process (PID=2872) to work on /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:05:49.516+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/postToHubspot.py for tasks to queue
+[2025-03-19T00:05:49.517+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:49.517+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:05:49.522+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync' retrieved from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:05:49.532+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:49.531+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:05:49.538+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:49.538+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
+[2025-03-19T00:05:49.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.038 seconds
+[2025-03-19T00:06:19.667+0000] {processor.py:186} INFO - Started process (PID=2944) to work on /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:19.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/postToHubspot.py for tasks to queue
+[2025-03-19T00:06:19.676+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:19.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:19.687+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync' retrieved from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:19.725+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:19.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:06:19.754+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:19.754+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
+[2025-03-19T00:06:19.794+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.133 seconds
+[2025-03-19T00:06:50.745+0000] {processor.py:186} INFO - Started process (PID=3016) to work on /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:50.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/postToHubspot.py for tasks to queue
+[2025-03-19T00:06:50.748+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:50.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:50.755+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync' retrieved from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:06:50.768+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:50.768+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:06:50.779+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:50.779+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
+[2025-03-19T00:06:50.789+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.050 seconds
+[2025-03-19T00:07:21.697+0000] {processor.py:186} INFO - Started process (PID=3088) to work on /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:21.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/postToHubspot.py for tasks to queue
+[2025-03-19T00:07:21.739+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:21.736+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:21.814+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync' retrieved from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:21.937+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:21.937+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:07:22.000+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:21.998+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
+[2025-03-19T00:07:22.061+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.376 seconds
+[2025-03-19T00:07:52.873+0000] {processor.py:186} INFO - Started process (PID=3160) to work on /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:52.876+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/postToHubspot.py for tasks to queue
+[2025-03-19T00:07:52.880+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:52.880+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:52.908+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_to_hubspot_sync' retrieved from /opt/airflow/dags/postToHubspot.py
+[2025-03-19T00:07:52.954+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:52.954+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:07:53.020+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:53.018+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_to_hubspot_sync to None, run_after=None
+[2025-03-19T00:07:53.202+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/postToHubspot.py took 0.338 seconds

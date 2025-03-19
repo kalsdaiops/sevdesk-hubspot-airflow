@@ -68,3 +68,45 @@
 [2025-03-19T00:04:52.243+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:04:52.243+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-19T00:04:52.290+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:04:52.290+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
 [2025-03-19T00:04:52.305+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.154 seconds
+[2025-03-19T00:05:22.483+0000] {processor.py:186} INFO - Started process (PID=2801) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:22.484+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:05:22.486+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:22.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:22.500+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:22.520+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:22.520+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:05:22.589+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:22.589+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:05:22.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.143 seconds
+[2025-03-19T00:05:52.726+0000] {processor.py:186} INFO - Started process (PID=2873) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:52.753+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:05:52.756+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:52.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:52.806+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:05:52.841+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:52.841+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:05:52.874+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:05:52.874+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:05:52.902+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.182 seconds
+[2025-03-19T00:06:23.724+0000] {processor.py:186} INFO - Started process (PID=2945) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:23.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:06:23.729+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:23.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:23.742+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:23.761+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:23.760+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:06:23.780+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:23.779+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:06:23.982+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.266 seconds
+[2025-03-19T00:06:54.887+0000] {processor.py:186} INFO - Started process (PID=3017) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:54.890+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:06:54.898+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:54.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:54.912+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:06:54.932+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:54.932+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:06:54.958+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:06:54.958+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:06:55.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.314 seconds
+[2025-03-19T00:07:25.553+0000] {processor.py:186} INFO - Started process (PID=3089) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:25.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:07:25.559+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:25.559+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:25.578+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:25.600+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:25.599+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:07:25.623+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:25.623+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:07:25.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.096 seconds
+[2025-03-19T00:07:55.943+0000] {processor.py:186} INFO - Started process (PID=3161) to work on /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:55.945+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sevdesk_contact_pipeline.py for tasks to queue
+[2025-03-19T00:07:55.947+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:55.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:55.960+0000] {processor.py:925} INFO - DAG(s) 'sevdesk_contact_pipeline' retrieved from /opt/airflow/dags/sevdesk_contact_pipeline.py
+[2025-03-19T00:07:55.994+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:55.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:07:56.021+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:07:56.021+0000] {dag.py:4180} INFO - Setting next_dagrun for sevdesk_contact_pipeline to 2025-03-19 00:00:00+00:00, run_after=2025-03-19 01:00:00+00:00
+[2025-03-19T00:07:56.040+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sevdesk_contact_pipeline.py took 0.102 seconds

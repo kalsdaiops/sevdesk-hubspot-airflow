@@ -4,7 +4,11 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 
 # SevDesk API Configuration
+<<<<<<< HEAD
 API_KEY = ""
+=======
+API_KEY = "62837f0452b821e78683b111ad4d6727"
+>>>>>>> 7a39430 (Initial commit - Added sevDesk to HubSpot Airflow DAG)
 BASE_URL = "https://my.sevdesk.de/api/v1"
 CONTACT_ID = "98976708"
 headers = {"Authorization": API_KEY, "Content-Type": "application/json"}

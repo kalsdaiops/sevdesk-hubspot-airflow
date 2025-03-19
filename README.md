@@ -9,6 +9,7 @@ This project automates the process of transferring newly created contacts from *
 - **HubSpot API** → Creates contacts in CRM
 - **Docker** → Containerized execution
 - **GitHub** → Version control
+<<<<<<< HEAD
   
 🛠 Tech Equivalents: AWS vs. Apache Airflow
 AWS Service	Apache Airflow Equivalent	Purpose
@@ -17,6 +18,8 @@ AWS Service	Apache Airflow Equivalent	Purpose
 - **AWS Secrets Manager | 	Airflow Variables & Connections	 -**	Stores API keys securely to avoid hardcoding sensitive credentials.
 - **AWS CloudWatch Logs | 	Airflow Task Logs (UI & Logging)**	 -	Logs task execution, errors, and success status.
 - **AWS Step Functions | 	Airflow DAG Task Dependencies**	 -	Defines task execution order and dependencies.
+=======
+>>>>>>> 7a39430 (Initial commit - Added sevDesk to HubSpot Airflow DAG)
 
 ## 📂 Project Structure
 ```

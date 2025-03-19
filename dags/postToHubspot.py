@@ -7,7 +7,11 @@ from airflow.operators.python import PythonOperator
 import re
 
 # HubSpot API Token (Replace with actual HubSpot API token)
+<<<<<<< HEAD
 HUBSPOT_API_TOKEN = ""
+=======
+HUBSPOT_API_TOKEN = "pat-eu1-9b932abf-c64a-49d7-b0d5-4a4a41a73f07"
+>>>>>>> 7a39430 (Initial commit - Added sevDesk to HubSpot Airflow DAG)
 
 # HubSpot API Headers
 HUBSPOT_HEADERS = {

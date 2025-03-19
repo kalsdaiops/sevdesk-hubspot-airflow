@@ -1,0 +1,233 @@
+[2025-03-18T00:25:01.030+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-18T00:25:01.036+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sevdesk_to_hubspot_sync_dynamic.detect_new_contact_in_sevdesk scheduled__2025-03-18T00:20:00+00:00 [queued]>
+[2025-03-18T00:25:01.038+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sevdesk_to_hubspot_sync_dynamic.detect_new_contact_in_sevdesk scheduled__2025-03-18T00:20:00+00:00 [queued]>
+[2025-03-18T00:25:01.038+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-18T00:25:01.102+0000] {taskinstance.py:2890} INFO - Executing <Task(SevDeskNewContactSensor): detect_new_contact_in_sevdesk> on 2025-03-18 00:20:00+00:00
+[2025-03-18T00:25:01.105+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=109) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-18T00:25:01.105+0000] {standard_task_runner.py:72} INFO - Started process 110 to run task
+[2025-03-18T00:25:01.106+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'sevdesk_to_hubspot_sync_dynamic', 'detect_new_contact_in_sevdesk', 'scheduled__2025-03-18T00:20:00+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/dynamicsensor_dag.py', '--cfg-path', '/tmp/tmpyy83fm4r']
+[2025-03-18T00:25:01.106+0000] {standard_task_runner.py:105} INFO - Job 125: Subtask detect_new_contact_in_sevdesk
+[2025-03-18T00:25:01.128+0000] {task_command.py:467} INFO - Running <TaskInstance: sevdesk_to_hubspot_sync_dynamic.detect_new_contact_in_sevdesk scheduled__2025-03-18T00:20:00+00:00 [running]> on host 51d845a36bff
+[2025-03-18T00:25:01.151+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='sevdesk_to_hubspot_sync_dynamic' AIRFLOW_CTX_TASK_ID='detect_new_contact_in_sevdesk' AIRFLOW_CTX_EXECUTION_DATE='2025-03-18T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-18T00:20:00+00:00'
+[2025-03-18T00:25:01.152+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-18T00:25:01.152+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-18T00:25:01.152+0000] {logging_mixin.py:190} INFO - Current task name:detect_new_contact_in_sevdesk state:running start_date:2025-03-18 00:25:01.036530+00:00
+[2025-03-18T00:25:01.152+0000] {logging_mixin.py:190} INFO - Dag name:sevdesk_to_hubspot_sync_dynamic and current dag run status:running
+[2025-03-18T00:25:01.152+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-18T00:25:01.156+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 309, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 289, in execute
+    poke_return = self.poke(context)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dynamicsensor_dag.py", line 68, in poke
+    new_contact_id = fetch_new_contact_from_sevdesk()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dynamicsensor_dag.py", line 21, in fetch_new_contact_from_sevdesk
+    sevdesk_response = requests.get(f"{SEVDESK_BASE_URL}/Contact", headers=sevdesk_headers)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)"))
+[2025-03-18T00:25:01.161+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-03-18T00:25:01.161+0000] {logging_mixin.py:190} INFO - Task start:2025-03-18 00:25:01.036530+00:00 end:2025-03-18 00:25:01.161605+00:00 duration:0.125075
+[2025-03-18T00:25:01.162+0000] {logging_mixin.py:190} INFO - Task:<Task(SevDeskNewContactSensor): detect_new_contact_in_sevdesk> dag:<DAG: sevdesk_to_hubspot_sync_dynamic> dagrun:<DagRun sevdesk_to_hubspot_sync_dynamic @ 2025-03-18 00:20:00+00:00: scheduled__2025-03-18T00:20:00+00:00, state:running, queued_at: 2025-03-18 00:25:00.511147+00:00. externally triggered: False>
+[2025-03-18T00:25:01.162+0000] {logging_mixin.py:190} INFO - Failure caused by HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)"))
+[2025-03-18T00:25:01.162+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=sevdesk_to_hubspot_sync_dynamic, task_id=detect_new_contact_in_sevdesk, run_id=scheduled__2025-03-18T00:20:00+00:00, execution_date=20250318T002000, start_date=20250318T002501, end_date=20250318T002501
+[2025-03-18T00:25:01.170+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-18T00:25:01.171+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 125 for task detect_new_contact_in_sevdesk (HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)")); 110)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 309, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/sensors/base.py", line 289, in execute
+    poke_return = self.poke(context)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dynamicsensor_dag.py", line 68, in poke
+    new_contact_id = fetch_new_contact_from_sevdesk()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dynamicsensor_dag.py", line 21, in fetch_new_contact_from_sevdesk
+    sevdesk_response = requests.get(f"{SEVDESK_BASE_URL}/Contact", headers=sevdesk_headers)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='my.sevdesk.de', port=443): Max retries exceeded with url: /api/v1/Contact (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff73eb9be0>: Failed to resolve 'my.sevdesk.de' ([Errno -2] Name or service not known)"))
+[2025-03-18T00:25:01.208+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-03-18T00:25:01.216+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-18T00:25:01.216+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

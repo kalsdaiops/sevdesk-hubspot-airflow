@@ -6,12 +6,17 @@ from datetime import datetime, timedelta
 
 # API Keys
 <<<<<<< HEAD
+<<<<<<< HEAD
 SEVDESK_API_KEY = ""
 HUBSPOT_API_KEY = ""  # Replace with actual HubSpot token
 =======
 SEVDESK_API_KEY = "62837f0452b821e78683b111ad4d6727"
 HUBSPOT_API_KEY = "pat-eu1-9b932abf-c64a-49d7-b0d5-4a4a41a73f07"  # Replace with actual HubSpot token
 >>>>>>> 7a39430 (Initial commit - Added sevDesk to HubSpot Airflow DAG)
+=======
+SEVDESK_API_KEY = ""
+HUBSPOT_API_KEY = ""  # Replace with actual HubSpot token
+>>>>>>> c7f078f (Initial commit - Added sevDesk to HubSpot Airflow DAG)
 
 # Base URLs
 SEVDESK_BASE_URL = "https://my.sevdesk.de/api/v1"

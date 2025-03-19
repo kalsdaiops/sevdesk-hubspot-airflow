@@ -16,7 +16,7 @@ HUBSPOT_HEADERS = {
 }
 
 # SevDesk API Token
-SEVDESK_API_TOKEN = "62837f0452b821e78683b111ad4d6727"
+SEVDESK_API_TOKEN = ""
 
 # SevDesk API base URL
 SEVDESK_BASE_URL = "https://my.sevdesk.de/"

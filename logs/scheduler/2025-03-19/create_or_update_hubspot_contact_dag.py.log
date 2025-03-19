@@ -145,3 +145,38 @@
 [2025-03-19T00:10:41.802+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:10:41.802+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-03-19T00:10:41.811+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:10:41.811+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
 [2025-03-19T00:10:41.821+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.051 seconds
+[2025-03-19T00:11:42.630+0000] {processor.py:186} INFO - Started process (PID=3683) to work on /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:11:42.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_or_update_hubspot_contact_dag.py for tasks to queue
+[2025-03-19T00:11:42.647+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:11:42.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:11:42.685+0000] {processor.py:925} INFO - DAG(s) 'create_or_update_hubspot_contact' retrieved from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:11:42.729+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:11:42.729+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:11:42.766+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:11:42.766+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
+[2025-03-19T00:11:42.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.206 seconds
+[2025-03-19T00:12:13.398+0000] {processor.py:186} INFO - Started process (PID=3755) to work on /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:13.399+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_or_update_hubspot_contact_dag.py for tasks to queue
+[2025-03-19T00:12:13.402+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:13.401+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:13.407+0000] {processor.py:925} INFO - DAG(s) 'create_or_update_hubspot_contact' retrieved from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:13.428+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:13.428+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:12:13.441+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:13.441+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
+[2025-03-19T00:12:13.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.067 seconds
+[2025-03-19T00:12:43.670+0000] {processor.py:186} INFO - Started process (PID=3827) to work on /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:43.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_or_update_hubspot_contact_dag.py for tasks to queue
+[2025-03-19T00:12:43.679+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:43.679+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:43.759+0000] {processor.py:925} INFO - DAG(s) 'create_or_update_hubspot_contact' retrieved from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:12:43.856+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:43.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:12:43.895+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:12:43.895+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
+[2025-03-19T00:12:43.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.329 seconds
+[2025-03-19T00:13:14.776+0000] {processor.py:186} INFO - Started process (PID=3899) to work on /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:14.777+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_or_update_hubspot_contact_dag.py for tasks to queue
+[2025-03-19T00:13:14.779+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:14.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:14.784+0000] {processor.py:925} INFO - DAG(s) 'create_or_update_hubspot_contact' retrieved from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:14.797+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:14.797+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:13:14.805+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:14.805+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
+[2025-03-19T00:13:14.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.041 seconds
+[2025-03-19T00:13:45.042+0000] {processor.py:186} INFO - Started process (PID=3970) to work on /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:45.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/create_or_update_hubspot_contact_dag.py for tasks to queue
+[2025-03-19T00:13:45.052+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:45.051+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:45.072+0000] {processor.py:925} INFO - DAG(s) 'create_or_update_hubspot_contact' retrieved from /opt/airflow/dags/create_or_update_hubspot_contact_dag.py
+[2025-03-19T00:13:45.096+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:45.096+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-19T00:13:45.111+0000] {logging_mixin.py:190} INFO - [2025-03-19T00:13:45.111+0000] {dag.py:4180} INFO - Setting next_dagrun for create_or_update_hubspot_contact to None, run_after=None
+[2025-03-19T00:13:45.139+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/create_or_update_hubspot_contact_dag.py took 0.105 seconds

@@ -26,3 +26,5 @@
 [2025-03-19T00:08:03.569+0000] {logging_mixin.py:190} INFO - Dag name:fetch_sevdesk_contacts queued_at:2025-03-19 00:07:59.443305+00:00
 [2025-03-19T00:08:03.569+0000] {logging_mixin.py:190} INFO - Task hostname:e54e5582f32f operator:PythonOperator
 [2025-03-19T00:08:03.677+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-19T00:08:03.871+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-19T00:08:03.887+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,30 @@
+[2025-03-18T23:56:57.044+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-18T23:56:57.063+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_sevdesk_contacts.fetch_sevdesk_contacts_task scheduled__2024-04-05T17:00:00+00:00 [queued]>
+[2025-03-18T23:56:57.069+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_sevdesk_contacts.fetch_sevdesk_contacts_task scheduled__2024-04-05T17:00:00+00:00 [queued]>
+[2025-03-18T23:56:57.071+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-03-18T23:56:57.447+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): fetch_sevdesk_contacts_task> on 2024-04-05 17:00:00+00:00
+[2025-03-18T23:56:57.454+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1498) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-03-18T23:56:57.457+0000] {standard_task_runner.py:72} INFO - Started process 1517 to run task
+[2025-03-18T23:56:57.468+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_sevdesk_contacts', 'fetch_sevdesk_contacts_task', 'scheduled__2024-04-05T17:00:00+00:00', '--job-id', '783', '--raw', '--subdir', 'DAGS_FOLDER/fetch_sevdesk_contacts_dag.py', '--cfg-path', '/tmp/tmpcmlkjj3h']
+[2025-03-18T23:56:57.470+0000] {standard_task_runner.py:105} INFO - Job 783: Subtask fetch_sevdesk_contacts_task
+[2025-03-18T23:56:57.598+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_sevdesk_contacts.fetch_sevdesk_contacts_task scheduled__2024-04-05T17:00:00+00:00 [running]> on host e54e5582f32f
+[2025-03-18T23:56:57.778+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_sevdesk_contacts' AIRFLOW_CTX_TASK_ID='fetch_sevdesk_contacts_task' AIRFLOW_CTX_EXECUTION_DATE='2024-04-05T17:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-05T17:00:00+00:00'
+[2025-03-18T23:56:57.781+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-03-18T23:56:57.789+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-03-18T23:56:57.828+0000] {logging_mixin.py:190} INFO - Current task name:fetch_sevdesk_contacts_task state:running start_date:2025-03-18 23:56:57.064352+00:00
+[2025-03-18T23:56:57.829+0000] {logging_mixin.py:190} INFO - Dag name:fetch_sevdesk_contacts and current dag run status:running
+[2025-03-18T23:56:57.829+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-18T23:56:57.851+0000] {logging_mixin.py:190} INFO - Using createAfter filter: 2025-03-17T23:56:57.851447
+[2025-03-18T23:56:57.853+0000] {logging_mixin.py:190} INFO - Current timestamp: 2025-03-18T23:56:57.851472
+[2025-03-18T23:56:58.085+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-03-18T23:56:58.119+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-18T23:56:58.127+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fetch_sevdesk_contacts, task_id=fetch_sevdesk_contacts_task, run_id=scheduled__2024-04-05T17:00:00+00:00, execution_date=20240405T170000, start_date=20250318T235657, end_date=20250318T235658
+[2025-03-18T23:56:58.205+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-03-18T23:56:58.210+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-03-18T23:56:58.221+0000] {logging_mixin.py:190} INFO - Dag name:fetch_sevdesk_contacts queued_at:2025-03-18 23:56:53.653432+00:00
+[2025-03-18T23:56:58.222+0000] {logging_mixin.py:190} INFO - Task hostname:e54e5582f32f operator:PythonOperator
+[2025-03-18T23:56:58.266+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-18T23:56:58.326+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-18T23:56:58.345+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

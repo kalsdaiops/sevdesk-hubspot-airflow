@@ -17,3 +17,4 @@
 [2025-03-19T00:10:01.673+0000] {logging_mixin.py:190} INFO - Dag name:sevdesk_to_hubspot_sync_dynamic and current dag run status:running
 [2025-03-19T00:10:01.673+0000] {taskinstance.py:732} INFO - ::endgroup::
 [2025-03-19T00:10:01.818+0000] {logging_mixin.py:190} INFO - No new contact found yet.
+[2025-03-19T00:11:02.062+0000] {logging_mixin.py:190} INFO - No new contact found yet.

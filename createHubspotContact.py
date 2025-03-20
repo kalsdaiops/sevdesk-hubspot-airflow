@@ -1,10 +1,14 @@
 import requests
 import time
 from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv
 
-# 🔹 Replace with your actual API Key (HubSpot API Key)
-API_KEY = ""
+# Load environment variables from .env file
+load_dotenv()
 
+# 🔹 Retrieve API keys from environment variables
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
 # 🔹 HubSpot API URLs
 BASE_URL = "https://api.hubapi.com"
 GET_CONTACTS_URL = f"{BASE_URL}/crm/v3/objects/contacts/search"
@@ -13,7 +17,7 @@ UPDATE_CONTACT_URL = f"{BASE_URL}/crm/v3/objects/contacts/{{contact_id}}"
 
 # Headers for authentication
 headers = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {HUBSPOT_API_KEY}",
     "Content-Type": "application/json"
 }
 

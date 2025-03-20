@@ -2,16 +2,21 @@ import requests
 import json
 from datetime import datetime, timedelta  # Import timedelta here
 import os
+from dotenv import load_dotenv
 
-# SevDesk API Token (Replace with actual API token)
-api_token = ""
+# Load environment variables from .env file
+load_dotenv()
+# 🔹 Retrieve API keys from environment variables
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
+SEVDESK_API_TOKEN = os.getenv("SEVDESK_API_TOKEN")
+
 
 # SevDesk API base URL
 base_url = "https://my.sevdesk.de/"
 
 # Headers for authentication
 headers = {
-    "Authorization": api_token,
+    "Authorization": SEVDESK_API_TOKEN,
     "Content-Type": "application/json"
 }
 

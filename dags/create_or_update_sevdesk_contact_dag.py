@@ -4,8 +4,15 @@ from datetime import datetime, timedelta
 import requests
 import time
 
-# 🔹 Replace with your actual API Key
-API_KEY = ""
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API keys from environment variables
+#API_KEY = os.getenv("SEVDESK_API_KEY")
+SEVDESK_API_TOKEN = os.getenv("SEVDESK_API_TOKEN")
 
 # 🔹 sevDesk API URLs
 BASE_URL = "https://my.sevdesk.de/api/v1"
@@ -16,7 +23,7 @@ POST_EMAIL_URL = f"{BASE_URL}/CommunicationWay"
 
 # Headers for authentication
 headers = {
-    "Authorization": API_KEY,
+    "Authorization": SEVDESK_API_TOKEN,
     "Content-Type": "application/json"
 }
 
@@ -36,7 +43,7 @@ default_args = {
 }
 
 dag = DAG(
-    "sevdesk_contact_pipeline",  # Updated DAG name
+    "create_or_update_sevdesk_contact",  # Updated DAG name
     default_args=default_args,
     schedule_interval=timedelta(hours=1),  # Run every hour
     catchup=False,

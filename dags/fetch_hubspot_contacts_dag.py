@@ -3,8 +3,15 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import requests
 
-# 🔹 Replace with your actual HubSpot API Key
-API_KEY = ""
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API keys from environment variables
+
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
 
 # 🔹 HubSpot API URLs
 BASE_URL = "https://api.hubapi.com"
@@ -12,7 +19,7 @@ GET_CONTACTS_URL = f"{BASE_URL}/crm/v3/objects/contacts"
 
 # Headers for authentication
 headers = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {HUBSPOT_API_KEY}",
     "Content-Type": "application/json"
 }
 

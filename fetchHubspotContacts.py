@@ -1,15 +1,19 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-# 🔹 Replace with your actual HubSpot API Key
-API_KEY = ""
-
+# Load environment variables from .env file
+load_dotenv()
+# 🔹 Retrieve API keys from environment variables
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
+SEVDESK_API_TOKEN = os.getenv("SEVDESK_API_TOKEN")
 # 🔹 HubSpot API URLs
 BASE_URL = "https://api.hubapi.com"
 GET_CONTACTS_URL = f"{BASE_URL}/crm/v3/objects/contacts"
 
 # Headers for authentication
 headers = {
-    "Authorization": f"Bearer {API_KEY}",
+    "Authorization": f"Bearer {HUBSPOT_API_KEY}",
     "Content-Type": "application/json"
 }
 

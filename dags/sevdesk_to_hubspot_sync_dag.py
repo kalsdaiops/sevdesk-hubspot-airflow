@@ -10,15 +10,28 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get API keys from environment variables
-#SEVDESK_API_KEY = os.getenv("SEVDESK_API_KEY")
-SEVDESK_API_KEY = os.getenv("SEVDESK_API_KEY")
+SEVDESK_API_TOKEN = os.getenv("SEVDESK_API_TOKEN")
+
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
+
+#UBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")  # Make sure to load HubSpot API key from environment variables
 
 # SevDesk API base URL
 base_url = "https://my.sevdesk.de/"
 
-# Headers for authentication
+# Headers for SevDesk API authentication
 headers = {
-    "Authorization": SEVDESK_API_KEY,
+    "Authorization": SEVDESK_API_TOKEN,
+    "Content-Type": "application/json"
+}
+
+# HubSpot API base URL
+hubspot_url = "https://api.hubapi.com/contacts/v1/contact"
+
+
+# Headers for authentication
+hubspot_headers = {
+    "Authorization": f"Bearer {HUBSPOT_API_KEY}",
     "Content-Type": "application/json"
 }
 
@@ -46,6 +59,27 @@ def get_email(contact_id):
                 if comm.get("contact", {}).get("id") == contact_id and comm.get("type") == "EMAIL":
                     return comm.get("value", None)
     return None
+
+def create_hubspot_contact(contact_data):
+    """Create a new contact in HubSpot"""
+    url = f"{hubspot_url}?hapikey={HUBSPOT_API_KEY}"
+    
+    # Prepare the HubSpot contact data
+    contact_payload = {
+        "properties": {
+            "firstname": contact_data["first_name"],
+            "lastname": contact_data["last_name"],
+            "email": contact_data["email"]
+        }
+    }
+
+    # Make the API request to HubSpot
+    response = requests.post(url, headers=hubspot_headers, json=contact_payload)
+
+    if response.status_code == 200:
+        print(f"Successfully created HubSpot contact: {contact_data['first_name']} {contact_data['last_name']}")
+    else:
+        print(f"Failed to create HubSpot contact: {response.text}")
 
 def fetch_sevdesk_contacts():
     create_after = (datetime.now() - timedelta(days=1)).isoformat()
@@ -91,6 +125,15 @@ def fetch_sevdesk_contacts():
 
                 print(f"| {contact_id:<10} | {first_name:<20} | {last_name:<10} | {str(email):<22} | {created:<22} | {create_after:<22} | {current_timestamp:<22} | {flag:<10} |")
 
+                # If the contact is new, create it in HubSpot
+                if flag == "New":
+                    contact_data = {
+                        "first_name": first_name,
+                        "last_name": last_name,
+                        "email": email
+                    }
+                    create_hubspot_contact(contact_data)
+
             print(f"+------------+-----------------------+------------+------------------------+------------------------+------------------------+------------------------+")
 
             new_sensor = datetime.now().isoformat()
@@ -105,7 +148,7 @@ default_args = {
 }
 
 dag = DAG(
-    "fetch_sevdesk_contacts",
+    "sevdesk_to_hubspot_sync",
     default_args=default_args,
     description="Fetch contacts from sevDesk and log details",
     schedule_interval=timedelta(hours=1),

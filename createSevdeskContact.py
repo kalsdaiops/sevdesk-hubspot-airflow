@@ -1,10 +1,16 @@
 import requests
 import time  # Add delay between API calls
 from datetime import datetime, timedelta
+import os
+from dotenv import load_dotenv
 
-# 🔹 Replace with your actual API Key
-API_KEY = ""
+# Load environment variables from .env file
+load_dotenv()
 
+
+# 🔹 Retrieve API keys from environment variables
+HUBSPOT_API_KEY = os.getenv("HUBSPOT_API_KEY")
+SEVDESK_API_TOKEN = os.getenv("SEVDESK_API_TOKEN")
 # 🔹 sevDesk API URLs
 BASE_URL = "https://my.sevdesk.de/api/v1"
 GET_CONTACTS_URL = f"{BASE_URL}/Contact"
@@ -14,14 +20,14 @@ POST_EMAIL_URL = f"{BASE_URL}/CommunicationWay"
 
 # Headers for authentication
 headers = {
-    "Authorization": API_KEY,
+    "Authorization": SEVDESK_API_TOKEN,
     "Content-Type": "application/json"
 }
 
 # Define the timestamp (e.g., 1 hour ago)
 timestamp = (datetime.now() - timedelta(hours=1)).isoformat()  # Get contacts created in the last 1 hour
 
-# Print the `createAfter` filter and the current timestamp
+# Print the createAfter filter and the current timestamp
 print(f"Using createAfter filter: {timestamp}")
 print(f"Current timestamp: {datetime.now().isoformat()}")
 
